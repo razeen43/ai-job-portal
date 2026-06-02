@@ -1,1 +1,1 @@
-GET http://localhost:5000/api/dashboard/1
+GET https://ai-job-portal-m5pz.onrender.com/api/dashboard/1

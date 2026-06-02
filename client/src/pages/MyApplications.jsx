@@ -12,7 +12,7 @@ function MyApplications() {
       return;
     }
 
-    fetch(`http://localhost:5000/api/applications/${userId}`)
+    fetch(`https://ai-job-portal-m5pz.onrender.com/api/applications/${userId}`)
       .then((res) => res.json())
       .then((data) => setApplications(data))
       .catch((err) => console.error(err));

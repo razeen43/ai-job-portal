@@ -5,10 +5,10 @@ function Jobs() {
   const [skill, setSkill] = useState("");
 
   const fetchJobs = async () => {
-    let url = "http://localhost:5000/api/jobs";
+    let url = "https://ai-job-portal-m5pz.onrender.com/api/jobs";
 
     if (skill.trim() !== "") {
-      url = `http://localhost:5000/api/jobs?skill=${skill}`;
+      url = `https://ai-job-portal-m5pz.onrender.com/api/jobs?skill=${skill}`;
     }
 
     const response = await fetch(url);
@@ -18,7 +18,7 @@ function Jobs() {
   };
 
   const applyJob = async (jobId) => {
-    const response = await fetch("http://localhost:5000/api/apply", {
+    const response = await fetch("https://ai-job-portal-m5pz.onrender.com/api/apply", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

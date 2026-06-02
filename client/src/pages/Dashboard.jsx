@@ -30,7 +30,7 @@ function Dashboard() {
       return;
     }
 
-    fetch(`http://localhost:5000/api/dashboard/${userId}`)
+    fetch(`https://ai-job-portal-m5pz.onrender.com/api/dashboard/${userId}`)
       .then((res) => res.json())
       .then((data) => setStats(data))
       .catch((err) => console.error(err));

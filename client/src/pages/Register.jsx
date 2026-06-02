@@ -14,7 +14,7 @@ function Register() {
         try {
 
             const response = await fetch(
-                "http://localhost:5000/api/auth/register",
+                "https://ai-job-portal-m5pz.onrender.com/api/auth/register",
                 {
                     method: "POST",
                     headers: {

@@ -22,7 +22,7 @@ function ResumeAnalyzer() {
     const formData = new FormData();
     formData.append("resume", file);
 
-    const response = await fetch("http://localhost:5000/api/analyze-resume", {
+    const response = await fetch("https://ai-job-portal-m5pz.onrender.com/api/analyze-resume", {
       method: "POST",
       body: formData,
     });

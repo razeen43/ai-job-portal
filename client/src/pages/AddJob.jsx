@@ -22,7 +22,7 @@ function AddJob() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("http://localhost:5000/api/jobs", {
+    const response = await fetch("https://ai-job-portal-m5pz.onrender.com/api/jobs", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
