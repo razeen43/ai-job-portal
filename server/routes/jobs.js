@@ -71,11 +71,12 @@ router.post("/apply", (req, res) => {
         "INSERT INTO applications(user_id, job_id, status) VALUES (?, ?, ?)",
         [user_id, job_id, "Applied"],
         (err, result) => {
-            if (err) {
-                return res.status(500).json({
-                    error: err.message
-                });
-            }
+           if (err) {
+              console.log("JOBS API ERROR:", err);
+              return res.status(500).json({
+                 error: err.message || JSON.stringify(err)
+    });
+}
 
             res.json({
                 message: "Application Submitted Successfully",
